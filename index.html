@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 12: O Que Aconteceu? – Passado Simples com Verbos Regulares</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        h1, h2, h3, h4 { color: #2c3e50; }
+        h1 {
+            text-align: center;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            color: #2980b9;
+        }
+        h2 { border-left: 5px solid #3498db; padding-left: 10px; margin-top: 30px; }
+        
+        /* Navegação */
+        .nav-menu { text-align: center; margin: 20px 0; }
+        .btn-menu {
+            display: inline-block;
+            background-color: #34495e;
+            color: #ffffff;
+            padding: 10px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .btn-menu:hover { background-color: #2c3e50; transform: translateY(-2px); }
+
+        /* Caixas de Texto */
+        .theme-intro {
+            background-color: #eaf2f8;
+            border-left: 5px solid #3498db;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 25px;
+        }
+        .nota-gramatical, .nota-dica, .secao-exercicios, .tarefa-extra, .secao-gabarito {
+            background-color: #fff;
+            border: 1px solid #e0e0e0;
+            border-left: 5px solid #f39c12;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+        .nota-dica { border-left-color: #16a085; background-color: #e8f8f5; }
+        .tarefa-extra { border-left-color: #9b59b6; background-color: #fbf6fd; }
+        .secao-gabarito { border-left-color: #2ecc71; background-color: #f0fff4; }
+
+        /* Tabelas */
+        .table-responsive-wrapper { overflow-x: auto; margin: 20px 0; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 10px;
+            font-size: 0.95em;
+            background-color: #fff;
+        }
+        th, td {
+            border: 1px solid #dcdcdc;
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th { background-color: #34495e; color: #fff; }
+        tr:nth-child(even) { background-color: #f8f9fa; }
+
+        /* Estilos de Texto e IPA */
+        code {
+            font-family: 'Consolas', 'Courier New', monospace;
+            background-color: #eee;
+            padding: 2px 5px;
+            border-radius: 3px;
+            color: #c0392b;
+            display: inline-block;
+            margin: 2px 0;
+        }
+        .ipa-phrase-block { display: block; margin-top: 5px; }
+        .character-portuguese-phonetics {
+            font-style: italic;
+            color: #27ae60;
+            display: block;
+            margin-top: 2px;
+            font-weight: 500;
+        }
+        .translation-line {
+            display: block;
+            font-weight: bold;
+            color: #444;
+            margin-bottom: 4px;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 2px;
+        }
+        
+        /* Botões de Áudio */
+        .audio-link {
+            cursor: pointer;
+            border: none;
+            background: none;
+            font-size: 1.3em;
+            color: #3498db;
+            vertical-align: middle;
+            transition: transform 0.2s;
+        }
+        .audio-link:hover { transform: scale(1.2); color: #2980b9; }
+        
+        .example-word { font-weight: bold; color: #2980b9; }
+        .fill-in-blank {
+            display: inline-block;
+            width: 120px;
+            border-bottom: 2px solid #7f8c8d;
+            text-align: center;
+            color: #2980b9;
+            font-weight: bold;
+        }
+        
+        /* Listas */
+        ul.no-bullets { list-style-type: none; padding: 0; }
+        ul.no-bullets li { margin-bottom: 15px; padding-bottom: 10px; border-bottom: 1px solid #eee; }
+        .quiz-options { list-style-type: none; padding-left: 0; }
+        .quiz-options li { margin-bottom: 10px; padding: 5px; background: #fff; border-radius: 4px; }
+        .exercise-list { list-style-type: decimal; padding-left: 20px; }
+        .exercise-list li { margin-bottom: 15px; }
+
+        @media (max-width: 768px) {
+            .container { padding: 15px; }
+            table { font-size: 0.85em; }
+            th, td { padding: 8px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Menu Superior -->
+        <div class="nav-menu">
+            <a href="https://espaco-liberdade.github.io/inglesipa/" class="btn-menu">⬅ Voltar ao Menu</a>
+        </div>
+
+        <h1>Aula 12: O Que Aconteceu? – Passado Simples com Verbos Regulares 🔙📅<br>(What Happened? – Simple Past with Regular Verbs)</h1>
+
+        <div class="theme-intro">
+            <p>Olá! Bem-vindo(a) à Aula 12! 🎉</p>
+            <p>Na aula anterior, falamos sobre o passado com o verbo "To Be". Hoje, vamos expandir nossos horizontes e aprender a usar o <strong>Passado Simples (Simple Past)</strong> com a maioria dos outros verbos, focando nos <strong>Verbos Regulares (Regular Verbs)</strong>. O tema será <strong>Atividades de fim de semana e eventos passados recentes</strong>. Prepare-se para contar suas histórias! 🏕️⚽🎬</p>
+        </div>
+
+        <h2>12. Narrando Eventos Passados: Verbos Regulares</h2>
+
+        <section id="simple-past-regular-intro">
+            <h3>12.1 A Regra do "-ed": Transformando o Presente em Passado ✨</h3>
+            <p>A grande notícia sobre o Passado Simples em inglês é que, para os <strong>verbos regulares</strong>, a regra é muito simples e consistente para <strong>todas</strong> as pessoas (I, you, he, she, it, we, they): basta adicionar <strong>"-ed"</strong> ao final do verbo!</p>
+            <p><strong>Estrutura Afirmativa:</strong> Sujeito + Verbo com "-ed" + Complemento.</p>
+            
+            <div class="nota-dica">
+                <h4>Regras de Ortografia para "-ed" (Spelling Rules):</h4>
+                <ul class="no-bullets">
+                    <li><strong>Regra Geral:</strong> Adicionar "-ed". (walk → walked)</li>
+                    <li><strong>Verbos terminados em "-e":</strong> Adicionar apenas "-d". (like → liked, live → lived)</li>
+                    <li><strong>Consoante + Vogal + Consoante (CVC) tônica:</strong> Dobrar a última consoante e adicionar "-ed". (stop → stopped, plan → planned)</li>
+                    <li><strong>Consoante + "y":</strong> Trocar "y" por "i" e adicionar "-ed". (study → studied, cry → cried)</li>
+                    <li><strong>Vogal + "y":</strong> Apenas adicionar "-ed". (play → played, stay → stayed)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="pronuncia-ed">
+            <h3>12.2 O Segredo da Pronúncia do "-ed": /t/, /d/, ou /ɪd/? 🗣️</h3>
+            <p>Embora a escrita seja sempre "-ed", a pronúncia pode variar de três formas:</p>
+            <ul class="no-bullets">
+                <li><strong>/t/ (som de T):</strong> Após sons surdos (sem vibração das cordas vocais) como /k/, /p/, /s/, /ʃ/ (sh), /tʃ/ (ch), /f/.
+                    <br>Ex: worked (work<strong>t</strong>), watched (watch<strong>t</strong>).
+                </li>
+                <li><strong>/d/ (som de D):</strong> Após sons sonoros (com vibração) como /l/, /n/, /v/, /b/, /g/, /m/, /z/ e vogais.
+                    <br>Ex: played (play<strong>d</strong>), lived (live<strong>d</strong>).
+                </li>
+                <li><strong>/ɪd/ (som de ID):</strong> Após os sons /t/ e /d/. É a única vez que pronunciamos a vogal "e" do "-ed" claramente.
+                    <br>Ex: wanted (want-<strong>id</strong>), needed (need-<strong>id</strong>).
+                </li>
+            </ul>
+        </section>
+
+        <section id="simple-past-affirmative">
+            <h3>12.3 Prática Afirmativa: Contando o que Aconteceu</h3>
+            <div class="table-responsive-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 20%;">Verbo (Base)</th>
+                            <th style="width: 25%;">Passado (-ed)</th>
+                            <th style="width: 55%;">Exemplo, Tradução + Pronúncia + Áudio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Walk</td>
+                            <td><strong>Walked</strong> (/t/)</td>
+                            <td>
+                                I walked to the park yesterday. <button onclick="playAudio('I walked to the park yesterday')" class="audio-link">🔊</button><br>
+                                <span class="translation-line">Eu caminhei até o parque ontem.</span><br>
+                                <code>/aɪ wɔːkt tə ðə pɑːrk ˈjestərdeɪ/</code><br>
+                                <span class="character-portuguese-phonetics">(ÁI UÓKT tã dhã PÁRK IÉS-tãr-dei)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Play</td>
+                            <td><strong>Played</strong> (/d/)</td>
+                            <td>
+                                He played soccer last weekend. <button onclick="playAudio('He played soccer last weekend')" class="audio-link">🔊</button><br>
+                                <span class="translation-line">Ele jogou futebol no fim de semana passado.</span><br>
+                                <code>/hiː pleɪd ˈsɑːkər læst ˈwiːkend/</code><br>
+                                <span class="character-portuguese-phonetics">(RÍI PLÊID SÓ-cãr LÉST UÍI-kend)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Watch</td>
+                            <td><strong>Watched</strong> (/t/)</td>
+                            <td>
+                                We watched a movie on Friday. <button onclick="playAudio('We watched a movie on Friday')" class="audio-link">🔊</button><br>
+                                <span class="translation-line">Nós assistimos um filme na sexta.</span><br>
+                                <code>/wiː wɑːtʃt ə ˈmuːvi ɑːn ˈfraɪdeɪ/</code><br>
+                                <span class="character-portuguese-phonetics">(UÍI UÓTCHT ã MÚU-vi ón FRÁI-dei)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Listen</td>
+                            <td><strong>Listened</strong> (/d/)</td>
+                            <td>
+                                She listened to music all day. <button onclick="playAudio('She listened to music all day')" class="audio-link">🔊</button><br>
+                                <span class="translation-line">Ela ouviu música o dia todo.</span><br>
+                                <code>/ʃiː ˈlɪsnd tə ˈmjuːzɪk ɔːl deɪ/</code><br>
+                                <span class="character-portuguese-phonetics">(XÍI LÊ-sãnd tã MIÚ-zêk ÓL DÊI)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Want</td>
+                            <td><strong>Wanted</strong> (/ɪd/)</td>
+                            <td>
+                                They wanted to go to the beach. <button onclick="playAudio('They wanted to go to the beach')" class="audio-link">🔊</button><br>
+                                <span class="translation-line">Eles queriam ir à praia.</span><br>
+                                <code>/ðeɪ ˈwɑːntɪd tə ɡoʊ tə ðə biːtʃ/</code><br>
+                                <span class="character-portuguese-phonetics">(DHÊI UÓN-têd tã GÔU tã dhã BÍITCH)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Need</td>
+                            <td><strong>Needed</strong> (/ɪd/)</td>
+                            <td>
+                                You needed help with homework. <button onclick="playAudio('You needed help with homework')" class="audio-link">🔊</button><br>
+                                <span class="translation-line">Você precisava de ajuda com a lição de casa.</span><br>
+                                <code>/juː ˈniːdɪd help wɪð ˈhoʊmwɜːrk/</code><br>
+                                <span class="character-portuguese-phonetics">(IÚU NÍI-dêd RÉLP uêDH RÔUM-uãrk)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Cook</td>
+                            <td><strong>Cooked</strong> (/t/)</td>
+                            <td>
+                                My father cooked dinner. <button onclick="playAudio('My father cooked dinner')" class="audio-link">🔊</button><br>
+                                <span class="translation-line">Meu pai cozinhou o jantar.</span><br>
+                                <code>/maɪ ˈfɑːðər kʊkt ˈdɪnər/</code><br>
+                                <span class="character-portuguese-phonetics">(MÁI FÁ-dhãr CÚKT DÊ-nãr)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Live</td>
+                            <td><strong>Lived</strong> (/d/)</td>
+                            <td>
+                                I lived in Brazil for two years. <button onclick="playAudio('I lived in Brazil for two years')" class="audio-link">🔊</button><br>
+                                <span class="translation-line">Eu morei no Brasil por dois anos.</span><br>
+                                <code>/aɪ lɪvd ɪn brəˈzɪl fər tuː jɪrz/</code><br>
+                                <span class="character-portuguese-phonetics">(ÁI LÊVD în brã-ZÊL fór TÚU IÍRZ)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Study</td>
+                            <td><strong>Studied</strong> (/d/)</td>
+                            <td>
+                                We studied English last night. <button onclick="playAudio('We studied English last night')" class="audio-link">🔊</button><br>
+                                <span class="translation-line">Nós estudamos inglês ontem à noite.</span><br>
+                                <code>/wiː ˈstʌdid ˈɪŋɡlɪʃ læst naɪt/</code><br>
+                                <span class="character-portuguese-phonetics">(UÍI STâ-did ÊN-glêsh LÉST NÁIT)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Stop</td>
+                            <td><strong>Stopped</strong> (/t/)</td>
+                            <td>
+                                The rain stopped an hour ago. <button onclick="playAudio('The rain stopped an hour ago')" class="audio-link">🔊</button><br>
+                                <span class="translation-line">A chuva parou uma hora atrás.</span><br>
+                                <code>/ðə reɪn stɑːpt ən ˈaʊər əˈɡoʊ/</code><br>
+                                <span class="character-portuguese-phonetics">(dhã RÊIN STÓPT ãn ÁU-ãr ã-GÔU)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Call</td>
+                            <td><strong>Called</strong> (/d/)</td>
+                            <td>
+                                She called her mom. <button onclick="playAudio('She called her mom')" class="audio-link">🔊</button><br>
+                                <span class="translation-line">Ela ligou para a mãe dela.</span><br>
+                                <code>/ʃiː kɔːld hər mɑːm/</code><br>
+                                <span class="character-portuguese-phonetics">(XÍI CÓLD rãr MÓM)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Wait</td>
+                            <td><strong>Waited</strong> (/ɪd/)</td>
+                            <td>
+                                They waited for the bus. <button onclick="playAudio('They waited for the bus')" class="audio-link">🔊</button><br>
+                                <span class="translation-line">Eles esperaram pelo ônibus.</span><br>
+                                <code>/ðeɪ ˈweɪtɪd fər ðə bʌs/</code><br>
+                                <span class="character-portuguese-phonetics">(DHÊI UÊI-têd fór dhã BÂS)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Work</td>
+                            <td><strong>Worked</strong> (/t/)</td>
+                            <td>
+                                He worked hard yesterday. <button onclick="playAudio('He worked hard yesterday')" class="audio-link">🔊</button><br>
+                                <span class="translation-line">Ele trabalhou muito ontem.</span><br>
+                                <code>/hiː wɜːrkt hɑːrd ˈjestərdeɪ/</code><br>
+                                <span class="character-portuguese-phonetics">(RÍI UÃRKT RÁRD IÉS-tãr-dei)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Clean</td>
+                            <td><strong>Cleaned</strong> (/d/)</td>
+                            <td>
+                                We cleaned the house. <button onclick="playAudio('We cleaned the house')" class="audio-link">🔊</button><br>
+                                <span class="translation-line">Nós limpamos a casa.</span><br>
+                                <code>/wiː kliːnd ðə haʊs/</code><br>
+                                <span class="character-portuguese-phonetics">(UÍI CLÍIND dhã RÁUS)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Start</td>
+                            <td><strong>Started</strong> (/ɪd/)</td>
+                            <td>
+                                The movie started at 8 PM. <button onclick="playAudio('The movie started at 8 PM')" class="audio-link">🔊</button><br>
+                                <span class="translation-line">O filme começou às 20h.</span><br>
+                                <code>/ðə ˈmuːvi ˈstɑːrtɪd æt eɪt piː em/</code><br>
+                                <span class="character-portuguese-phonetics">(dhã MÚU-vi STÁR-têd ét ÊIT PÍI-ÉM)</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="did-auxiliar">
+            <h3>12.4 O Auxiliar "Did": Negativas e Interrogativas ❓⛔</h3>
+            <p>Assim como usamos "do/does" no presente, usamos o auxiliar <strong>DID</strong> para fazer perguntas e negativas no passado com todos os verbos (exceto "to be").</p>
+            <p><strong>Regra de Ouro:</strong> Quando usamos o auxiliar <strong>DID</strong> (ou <strong>DIDN'T</strong>), o verbo principal volta para a sua <strong>FORMA BASE</strong> (sem "-ed"). O "did" já indica que a frase está no passado.</p>
+
+            <h4>Frases Negativas (Did not / Didn't)</h4>
+            <div class="table-responsive-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 50%;">Frase em Inglês</th>
+                            <th style="width: 50%;">Tradução + Pronúncia + Áudio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>I <span class="example-word">didn't watch</span> TV yesterday. <button onclick="playAudio('I didn\'t watch TV yesterday')" class="audio-link">🔊</button></td>
+                            <td>
+                                <span class="translation-line">Eu não assisti TV ontem.</span><br>
+                                <code>/aɪ ˈdɪdnt wɑːtʃ ˌtiːˈviː ˈjestərdeɪ/</code><br>
+                                <span class="character-portuguese-phonetics">(ÁI DÊ-dãnt UÓTCH tíi-VÍI IÉS-tãr-dei)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>She <span class="example-word">didn't play</span> tennis. <button onclick="playAudio('She didn\'t play tennis')" class="audio-link">🔊</button></td>
+                            <td>
+                                <span class="translation-line">Ela não jogou tênis.</span><br>
+                                <code>/ʃiː ˈdɪdnt pleɪ ˈtenɪs/</code><br>
+                                <span class="character-portuguese-phonetics">(XÍI DÊ-dãnt PLÊI TÉ-nês)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>We <span class="example-word">didn't visit</span> the museum. <button onclick="playAudio('We didn\'t visit the museum')" class="audio-link">🔊</button></td>
+                            <td>
+                                <span class="translation-line">Nós não visitamos o museu.</span><br>
+                                <code>/wiː ˈdɪdnt ˈvɪzɪt ðə mjuˈziːəm/</code><br>
+                                <span class="character-portuguese-phonetics">(UÍI DÊ-dãnt VÊ-zêt dhã miu-ZÍI-ãm)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>They <span class="example-word">didn't like</span> the food. <button onclick="playAudio('They didn\'t like the food')" class="audio-link">🔊</button></td>
+                            <td>
+                                <span class="translation-line">Eles não gostaram da comida.</span><br>
+                                <code>/ðeɪ ˈdɪdnt laɪk ðə fuːd/</code><br>
+                                <span class="character-portuguese-phonetics">(DHÊI DÊ-dãnt LÁIK dhã FÚUD)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>He <span class="example-word">didn't work</span> last week. <button onclick="playAudio('He didn\'t work last week')" class="audio-link">🔊</button></td>
+                            <td>
+                                <span class="translation-line">Ele não trabalhou semana passada.</span><br>
+                                <code>/hiː ˈdɪdnt wɜːrk læst wiːk/</code><br>
+                                <span class="character-portuguese-phonetics">(RÍI DÊ-dãnt UÃRK LÉST UÍIK)</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>Frases Interrogativas (Did...?)</h4>
+            <div class="table-responsive-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 50%;">Frase em Inglês</th>
+                            <th style="width: 50%;">Tradução + Pronúncia + Áudio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="example-word">Did</span> you <span class="example-word">call</span> me? <button onclick="playAudio('Did you call me?')" class="audio-link">🔊</button></td>
+                            <td>
+                                <span class="translation-line">Você me ligou?</span><br>
+                                <code>/dɪd juː kɔːl miː/</code><br>
+                                <span class="character-portuguese-phonetics">(DÊD iúu CÓL míi?)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="example-word">Did</span> she <span class="example-word">finish</span> the book? <button onclick="playAudio('Did she finish the book?')" class="audio-link">🔊</button></td>
+                            <td>
+                                <span class="translation-line">Ela terminou o livro?</span><br>
+                                <code>/dɪd ʃiː ˈfɪnɪʃ ðə bʊk/</code><br>
+                                <span class="character-portuguese-phonetics">(DÊD xíi FÊ-nish dhã BÚK?)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="example-word">Did</span> they <span class="example-word">arrive</span> on time? <button onclick="playAudio('Did they arrive on time?')" class="audio-link">🔊</button></td>
+                            <td>
+                                <span class="translation-line">Eles chegaram na hora?</span><br>
+                                <code>/dɪd ðeɪ əˈraɪv ɑːn taɪm/</code><br>
+                                <span class="character-portuguese-phonetics">(DÊD dhêi ã-RÁIV ón TÁIM?)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>What <span class="example-word">did</span> you <span class="example-word">do</span> yesterday? <button onclick="playAudio('What did you do yesterday?')" class="audio-link">🔊</button></td>
+                            <td>
+                                <span class="translation-line">O que você fez ontem?</span><br>
+                                <code>/wʌt dɪd juː duː ˈjestərdeɪ/</code><br>
+                                <span class="character-portuguese-phonetics">(UÓT dêd iúu DÚU IÉS-tãr-dei?)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Where <span class="example-word">did</span> he <span class="example-word">live</span> before? <button onclick="playAudio('Where did he live before?')" class="audio-link">🔊</button></td>
+                            <td>
+                                <span class="translation-line">Onde ele morava antes?</span><br>
+                                <code>/wer dɪd hiː lɪv bɪˈfɔːr/</code><br>
+                                <span class="character-portuguese-phonetics">(UÉR dêd ríi LÊV bi-FÓR?)</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <div class="tarefa-extra">
+            <h4>Tarefa Extra: Reading and Comprehension</h4>
+            <h5>My Busy Weekend</h5>
+            <p>
+                Last weekend was very busy but fun. On Saturday morning, I cleaned my apartment. It took a long time, but it looked great afterwards. Then, I walked to the grocery store and shopped for food for the week. In the afternoon, I visited my parents. We talked for hours and watched a funny movie on TV. My mom cooked a delicious dinner for us.
+            </p>
+            <p>
+                On Sunday, the weather was nice, so I played tennis with my friend Mike at the park. We played for two hours and I was very tired. After that, I returned home and rested for a bit. In the evening, I studied for my English test on Monday. I didn't want to study, but I needed to prepare. I finished studying at 10 PM and then listened to some relaxing music before bed. It was a good weekend!
+            </p>
+
+            <h4 style="margin-top: 25px;">Quiz</h4>
+            <p><strong>Based on the text, what did the narrator do on Saturday afternoon?</strong></p>
+            <ul class="quiz-options">
+                <li>a) Played tennis with Mike.</li>
+                <li>b) Cleaned the apartment.</li>
+                <li>c) Visited their parents and watched a movie.</li>
+                <li>d) Studied for an English test.</li>
+                <li>e) Shopped for food at the grocery store.</li>
+            </ul>
+        </div>
+
+        <section id="continuar-aprendendo">
+            <h3>Como Continuar Aprendendo? 🚀</h3>
+            <div class="nota-gramatical" style="border-left-color: #27ae60; background-color: #e6f7ef;">
+                <h4 style="color:#27ae60;">Dicas para Dominar o Passado Simples:</h4>
+                <ul class="exercise-list" style="list-style-type: disc;">
+                    <li><strong>Diário de Bordo:</strong> Escreva 3 frases sobre o que você fez ontem. Ex: "I worked.", "I cooked dinner.", "I watched TV."</li>
+                    <li><strong>Detetive do "-ed":</strong> Ao ler em inglês, circule todos os verbos terminados em "-ed" e tente pronunciá-los corretamente (/t/, /d/ ou /ɪd/).</li>
+                    <li><strong>Pergunte e Responda:</strong> Pratique com um amigo: "Did you watch the game?" "Yes, I watched it."</li>
+                    <li><strong>Transformação:</strong> Pegue frases do presente ("I play soccer") e mude para o passado ("I played soccer").</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="exercicios">
+            <h3>Exercícios Práticos 📝</h3>
+            <div class="secao-exercicios">
+                <h4>Parte 1: Complete com o Verbo no Passado</h4>
+                <p>Coloque o verbo entre parênteses no Passado Simples (adicione -ed ou suas variações).</p>
+                <ol class="exercise-list">
+                    <li>I <span class="fill-in-blank"></span> (visit) my grandmother last Sunday.</li>
+                    <li>She <span class="fill-in-blank"></span> (study) hard for the exam.</li>
+                    <li>We <span class="fill-in-blank"></span> (watch) a great series on Netflix.</li>
+                    <li>They <span class="fill-in-blank"></span> (play) basketball in the park.</li>
+                    <li>He <span class="fill-in-blank"></span> (clean) his car yesterday.</li>
+                    <li>You <span class="fill-in-blank"></span> (travel) to Japan last year.</li>
+                    <li>My mom <span class="fill-in-blank"></span> (cook) lasagna for lunch.</li>
+                    <li>The rain <span class="fill-in-blank"></span> (stop) in the morning.</li>
+                </ol>
+
+                <h4>Parte 2: Negativas e Interrogativas</h4>
+                <p>Transforme as frases conforme indicado.</p>
+                <ol class="exercise-list">
+                    <li>She planned a trip to Europe.
+                        <br>Negativa: <span class="fill-in-blank"></span>.
+                        <br>Interrogativa: <span class="fill-in-blank"></span>?
+                    </li>
+                    <li>They liked the new restaurant.
+                        <br>Negativa: <span class="fill-in-blank"></span>.
+                        <br>Interrogativa: <span class="fill-in-blank"></span>?
+                    </li>
+                    <li>He worked late last night.
+                        <br>Negativa: <span class="fill-in-blank"></span>.
+                        <br>Interrogativa: <span class="fill-in-blank"></span>?
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="gabarito-aula">
+            <div class="secao-gabarito">
+                <h4>Gabarito das Questões</h4>
+                <p><strong>Tarefa Extra (Quiz):</strong> A resposta correta é a letra <strong>C) Visited their parents and watched a movie.</strong></p>
+                <p><strong>Parte 1:</strong> 1. visited, 2. studied, 3. watched, 4. played, 5. cleaned, 6. traveled/travelled, 7. cooked, 8. stopped.</p>
+                <p><strong>Parte 2:</strong> 1. She didn't plan a trip to Europe. / Did she plan a trip to Europe? 2. They didn't like the new restaurant. / Did they like the new restaurant? 3. He didn't work late last night. / Did he work late last night?</p>
+            </div>
+        </section>
+
+        <section id="conclusao">
+            <h3>Conclusão 🥳</h3>
+            <p>Muito bem por completar a Aula 12! Você deu um grande passo ao aprender a usar o Passado Simples com verbos regulares para falar sobre ações concluídas. Agora você pode contar histórias sobre seu fim de semana e outros eventos passados.</p>
+            <p>Lembre-se da importância do auxiliar "did" para negativas e interrogativas, e de que o verbo principal volta para a forma base nessas estruturas.</p>
+            <p>Na Aula 13: "Desafios da Memória – Passado Simples com Verbos Irregulares Comuns", vamos continuar explorando o Passado Simples, mas desta vez com os verbos irregulares, que não seguem a regra do "-ed". Prepare-se para memorizar! Até lá!</p>
+        </section>
+
+        <!-- Menu Inferior -->
+        <div class="nav-menu">
+            <a href="https://espaco-liberdade.github.io/inglesipa/" class="btn-menu">⬅ Voltar ao Menu</a>
+        </div>
+    </div>
+
+    <script>
+        // Lógica de carregamento de vozes para compatibilidade mobile (Android/iOS)
+        let voices = [];
+        
+        function loadVoices() {
+            // Obtém a lista de vozes disponíveis no sistema
+            voices = window.speechSynthesis.getVoices();
+        }
+
+        // O evento onvoiceschanged é disparado quando a lista de vozes é carregada/alterada
+        if (window.speechSynthesis.onvoiceschanged !== undefined) {
+            window.speechSynthesis.onvoiceschanged = loadVoices;
+        }
+        
+        // Chamada inicial para tentar carregar vozes imediatamente
+        loadVoices();
+
+        function playAudio(text) {
+            if ('speechSynthesis' in window) {
+                // Interrompe qualquer fala em andamento para não sobrepor
+                window.speechSynthesis.cancel();
+                
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.rate = 0.85; // Velocidade um pouco mais lenta para didática
+                utterance.lang = 'en-US'; // Define o idioma base como fallback
+
+                // ESTRATÉGIA DE SELEÇÃO DE VOZ PARA MOBILE:
+                // 1. Tenta encontrar uma voz específica 'en-US' (Inglês Americano).
+                // 2. No Android, muitas vezes a voz se chama "Google US English" ou similar.
+                // 3. Se não achar US, tenta qualquer voz que comece com 'en' (Inglês Geral/Britânico).
+                
+                // Primeiro, garanta que temos vozes carregadas (caso o evento não tenha disparado antes)
+                if (voices.length === 0) {
+                    voices = window.speechSynthesis.getVoices();
+                }
+
+                const englishVoice = voices.find(voice => 
+                    voice.lang === 'en-US' && !voice.localService // Tenta priorizar vozes de alta qualidade (rede) se disponível
+                ) || voices.find(voice => 
+                    voice.lang === 'en-US'
+                ) || voices.find(voice => 
+                    voice.lang.startsWith('en')
+                );
+
+                // Se encontrou uma voz compatível, atribui explicitamente
+                if (englishVoice) {
+                    utterance.voice = englishVoice;
+                }
+
+                window.speechSynthesis.speak(utterance);
+            } else {
+                alert("Seu navegador não suporta a tecnologia de áudio. Tente usar o Chrome ou Safari atualizado.");
+            }
+        }
+    </script>
+</body>
+</html>
