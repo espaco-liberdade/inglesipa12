@@ -66,7 +66,7 @@
         .tarefa-extra { border-left-color: #9b59b6; background-color: #fbf6fd; }
         .secao-gabarito { border-left-color: #2ecc71; background-color: #f0fff4; }
 
-        /* Tabelas */
+        /* Tabelas Otimizadas */
         .table-responsive-wrapper { overflow-x: auto; margin: 20px 0; }
         table {
             width: 100%;
@@ -126,7 +126,7 @@
         .example-word { font-weight: bold; color: #2980b9; }
         .fill-in-blank {
             display: inline-block;
-            width: 120px;
+            width: 100px;
             border-bottom: 2px solid #7f8c8d;
             text-align: center;
             color: #2980b9;
@@ -136,6 +136,7 @@
         /* Listas */
         ul.no-bullets { list-style-type: none; padding: 0; }
         ul.no-bullets li { margin-bottom: 15px; padding-bottom: 10px; border-bottom: 1px solid #eee; }
+        .spelling-rules li { margin-bottom: 10px; }
         .quiz-options { list-style-type: none; padding-left: 0; }
         .quiz-options li { margin-bottom: 10px; padding: 5px; background: #fff; border-radius: 4px; }
         .exercise-list { list-style-type: decimal; padding-left: 20px; }
@@ -167,14 +168,13 @@
         <section id="simple-past-regular-intro">
             <h3>12.1 A Regra do "-ed": Transformando o Presente em Passado ✨</h3>
             <p>A grande notícia sobre o Passado Simples em inglês é que, para os <strong>verbos regulares</strong>, a regra é muito simples e consistente para <strong>todas</strong> as pessoas (I, you, he, she, it, we, they): basta adicionar <strong>"-ed"</strong> ao final do verbo!</p>
-            <p><strong>Estrutura Afirmativa:</strong> Sujeito + Verbo com "-ed" + Complemento.</p>
             
             <div class="nota-dica">
                 <h4>Regras de Ortografia para "-ed" (Spelling Rules):</h4>
                 <ul class="no-bullets">
                     <li><strong>Regra Geral:</strong> Adicionar "-ed". (walk → walked)</li>
                     <li><strong>Verbos terminados em "-e":</strong> Adicionar apenas "-d". (like → liked, live → lived)</li>
-                    <li><strong>Consoante + Vogal + Consoante (CVC) tônica:</strong> Dobrar a última consoante e adicionar "-ed". (stop → stopped, plan → planned)</li>
+                    <li><strong>CVC (Consoante-Vogal-Consoante) em sílaba tônica:</strong> Dobrar a última consoante e adicionar "-ed". (stop → stopped, plan → planned)</li>
                     <li><strong>Consoante + "y":</strong> Trocar "y" por "i" e adicionar "-ed". (study → studied, cry → cried)</li>
                     <li><strong>Vogal + "y":</strong> Apenas adicionar "-ed". (play → played, stay → stayed)</li>
                 </ul>
@@ -185,15 +185,9 @@
             <h3>12.2 O Segredo da Pronúncia do "-ed": /t/, /d/, ou /ɪd/? 🗣️</h3>
             <p>Embora a escrita seja sempre "-ed", a pronúncia pode variar de três formas:</p>
             <ul class="no-bullets">
-                <li><strong>/t/ (som de T):</strong> Após sons surdos (sem vibração das cordas vocais) como /k/, /p/, /s/, /ʃ/ (sh), /tʃ/ (ch), /f/.
-                    <br>Ex: worked (work<strong>t</strong>), watched (watch<strong>t</strong>).
-                </li>
-                <li><strong>/d/ (som de D):</strong> Após sons sonoros (com vibração) como /l/, /n/, /v/, /b/, /g/, /m/, /z/ e vogais.
-                    <br>Ex: played (play<strong>d</strong>), lived (live<strong>d</strong>).
-                </li>
-                <li><strong>/ɪd/ (som de ID):</strong> Após os sons /t/ e /d/. É a única vez que pronunciamos a vogal "e" do "-ed" claramente.
-                    <br>Ex: wanted (want-<strong>id</strong>), needed (need-<strong>id</strong>).
-                </li>
+                <li><strong>/t/ (som de T):</strong> Após sons surdos (sem vibração das cordas vocais) como /k/, /p/, /s/, /ʃ/ (sh), /tʃ/ (ch), /f/. Ex: worked, watched.</li>
+                <li><strong>/d/ (som de D):</strong> Após sons sonoros (com vibração) como /l/, /n/, /v/, /b/, /g/, /m/, /z/ e vogais. Ex: played, lived.</li>
+                <li><strong>/ɪd/ (som de ID):</strong> Após os sons /t/ e /d/. É a única vez que pronunciamos a vogal "e" do "-ed". Ex: wanted, needed.</li>
             </ul>
         </section>
 
@@ -209,167 +203,39 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Walk</td>
-                            <td><strong>Walked</strong> (/t/)</td>
-                            <td>
-                                I walked to the park yesterday. <button onclick="playAudio('I walked to the park yesterday')" class="audio-link">🔊</button><br>
-                                <span class="translation-line">Eu caminhei até o parque ontem.</span><br>
-                                <code>/aɪ wɔːkt tə ðə pɑːrk ˈjestərdeɪ/</code><br>
-                                <span class="character-portuguese-phonetics">(ÁI UÓKT tã dhã PÁRK IÉS-tãr-dei)</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Play</td>
-                            <td><strong>Played</strong> (/d/)</td>
-                            <td>
-                                He played soccer last weekend. <button onclick="playAudio('He played soccer last weekend')" class="audio-link">🔊</button><br>
-                                <span class="translation-line">Ele jogou futebol no fim de semana passado.</span><br>
-                                <code>/hiː pleɪd ˈsɑːkər læst ˈwiːkend/</code><br>
-                                <span class="character-portuguese-phonetics">(RÍI PLÊID SÓ-cãr LÉST UÍI-kend)</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Watch</td>
-                            <td><strong>Watched</strong> (/t/)</td>
-                            <td>
-                                We watched a movie on Friday. <button onclick="playAudio('We watched a movie on Friday')" class="audio-link">🔊</button><br>
-                                <span class="translation-line">Nós assistimos um filme na sexta.</span><br>
-                                <code>/wiː wɑːtʃt ə ˈmuːvi ɑːn ˈfraɪdeɪ/</code><br>
-                                <span class="character-portuguese-phonetics">(UÍI UÓTCHT ã MÚU-vi ón FRÁI-dei)</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Listen</td>
-                            <td><strong>Listened</strong> (/d/)</td>
-                            <td>
-                                She listened to music all day. <button onclick="playAudio('She listened to music all day')" class="audio-link">🔊</button><br>
-                                <span class="translation-line">Ela ouviu música o dia todo.</span><br>
-                                <code>/ʃiː ˈlɪsnd tə ˈmjuːzɪk ɔːl deɪ/</code><br>
-                                <span class="character-portuguese-phonetics">(XÍI LÊ-sãnd tã MIÚ-zêk ÓL DÊI)</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Want</td>
-                            <td><strong>Wanted</strong> (/ɪd/)</td>
-                            <td>
-                                They wanted to go to the beach. <button onclick="playAudio('They wanted to go to the beach')" class="audio-link">🔊</button><br>
-                                <span class="translation-line">Eles queriam ir à praia.</span><br>
-                                <code>/ðeɪ ˈwɑːntɪd tə ɡoʊ tə ðə biːtʃ/</code><br>
-                                <span class="character-portuguese-phonetics">(DHÊI UÓN-têd tã GÔU tã dhã BÍITCH)</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Need</td>
-                            <td><strong>Needed</strong> (/ɪd/)</td>
-                            <td>
-                                You needed help with homework. <button onclick="playAudio('You needed help with homework')" class="audio-link">🔊</button><br>
-                                <span class="translation-line">Você precisava de ajuda com a lição de casa.</span><br>
-                                <code>/juː ˈniːdɪd help wɪð ˈhoʊmwɜːrk/</code><br>
-                                <span class="character-portuguese-phonetics">(IÚU NÍI-dêd RÉLP uêDH RÔUM-uãrk)</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Cook</td>
-                            <td><strong>Cooked</strong> (/t/)</td>
-                            <td>
-                                My father cooked dinner. <button onclick="playAudio('My father cooked dinner')" class="audio-link">🔊</button><br>
-                                <span class="translation-line">Meu pai cozinhou o jantar.</span><br>
-                                <code>/maɪ ˈfɑːðər kʊkt ˈdɪnər/</code><br>
-                                <span class="character-portuguese-phonetics">(MÁI FÁ-dhãr CÚKT DÊ-nãr)</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Live</td>
-                            <td><strong>Lived</strong> (/d/)</td>
-                            <td>
-                                I lived in Brazil for two years. <button onclick="playAudio('I lived in Brazil for two years')" class="audio-link">🔊</button><br>
-                                <span class="translation-line">Eu morei no Brasil por dois anos.</span><br>
-                                <code>/aɪ lɪvd ɪn brəˈzɪl fər tuː jɪrz/</code><br>
-                                <span class="character-portuguese-phonetics">(ÁI LÊVD în brã-ZÊL fór TÚU IÍRZ)</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Study</td>
-                            <td><strong>Studied</strong> (/d/)</td>
-                            <td>
-                                We studied English last night. <button onclick="playAudio('We studied English last night')" class="audio-link">🔊</button><br>
-                                <span class="translation-line">Nós estudamos inglês ontem à noite.</span><br>
-                                <code>/wiː ˈstʌdid ˈɪŋɡlɪʃ læst naɪt/</code><br>
-                                <span class="character-portuguese-phonetics">(UÍI STâ-did ÊN-glêsh LÉST NÁIT)</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Stop</td>
-                            <td><strong>Stopped</strong> (/t/)</td>
-                            <td>
-                                The rain stopped an hour ago. <button onclick="playAudio('The rain stopped an hour ago')" class="audio-link">🔊</button><br>
-                                <span class="translation-line">A chuva parou uma hora atrás.</span><br>
-                                <code>/ðə reɪn stɑːpt ən ˈaʊər əˈɡoʊ/</code><br>
-                                <span class="character-portuguese-phonetics">(dhã RÊIN STÓPT ãn ÁU-ãr ã-GÔU)</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Call</td>
-                            <td><strong>Called</strong> (/d/)</td>
-                            <td>
-                                She called her mom. <button onclick="playAudio('She called her mom')" class="audio-link">🔊</button><br>
-                                <span class="translation-line">Ela ligou para a mãe dela.</span><br>
-                                <code>/ʃiː kɔːld hər mɑːm/</code><br>
-                                <span class="character-portuguese-phonetics">(XÍI CÓLD rãr MÓM)</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Wait</td>
-                            <td><strong>Waited</strong> (/ɪd/)</td>
-                            <td>
-                                They waited for the bus. <button onclick="playAudio('They waited for the bus')" class="audio-link">🔊</button><br>
-                                <span class="translation-line">Eles esperaram pelo ônibus.</span><br>
-                                <code>/ðeɪ ˈweɪtɪd fər ðə bʌs/</code><br>
-                                <span class="character-portuguese-phonetics">(DHÊI UÊI-têd fór dhã BÂS)</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Work</td>
-                            <td><strong>Worked</strong> (/t/)</td>
-                            <td>
-                                He worked hard yesterday. <button onclick="playAudio('He worked hard yesterday')" class="audio-link">🔊</button><br>
-                                <span class="translation-line">Ele trabalhou muito ontem.</span><br>
-                                <code>/hiː wɜːrkt hɑːrd ˈjestərdeɪ/</code><br>
-                                <span class="character-portuguese-phonetics">(RÍI UÃRKT RÁRD IÉS-tãr-dei)</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Clean</td>
-                            <td><strong>Cleaned</strong> (/d/)</td>
-                            <td>
-                                We cleaned the house. <button onclick="playAudio('We cleaned the house')" class="audio-link">🔊</button><br>
-                                <span class="translation-line">Nós limpamos a casa.</span><br>
-                                <code>/wiː kliːnd ðə haʊs/</code><br>
-                                <span class="character-portuguese-phonetics">(UÍI CLÍIND dhã RÁUS)</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Start</td>
-                            <td><strong>Started</strong> (/ɪd/)</td>
-                            <td>
-                                The movie started at 8 PM. <button onclick="playAudio('The movie started at 8 PM')" class="audio-link">🔊</button><br>
-                                <span class="translation-line">O filme começou às 20h.</span><br>
-                                <code>/ðə ˈmuːvi ˈstɑːrtɪd æt eɪt piː em/</code><br>
-                                <span class="character-portuguese-phonetics">(dhã MÚU-vi STÁR-têd ét ÊIT PÍI-ÉM)</span>
-                            </td>
-                        </tr>
+                        <tr><td>Walk</td><td><strong>Walked</strong> (/t/)</td><td>I walked to the park. <button onclick="playAudio('I walked to the park')" class="audio-link">🔊</button><br><span class="translation-line">Eu caminhei até o parque.</span><br><code>/aɪ wɔːkt tə ðə pɑːrk/</code></td></tr>
+                        <tr><td>Play</td><td><strong>Played</strong> (/d/)</td><td>He played soccer. <button onclick="playAudio('He played soccer')" class="audio-link">🔊</button><br><span class="translation-line">Ele jogou futebol.</span><br><code>/hiː pleɪd ˈsɑːkər/</code></td></tr>
+                        <tr><td>Watch</td><td><strong>Watched</strong> (/t/)</td><td>We watched a movie. <button onclick="playAudio('We watched a movie')" class="audio-link">🔊</button><br><span class="translation-line">Nós assistimos um filme.</span><br><code>/wiː wɑːtʃt ə ˈmuːvi/</code></td></tr>
+                        <tr><td>Listen</td><td><strong>Listened</strong> (/d/)</td><td>She listened to music. <button onclick="playAudio('She listened to music')" class="audio-link">🔊</button><br><span class="translation-line">Ela ouviu música.</span><br><code>/ʃiː ˈlɪsnd tə ˈmjuːzɪk/</code></td></tr>
+                        <tr><td>Wait</td><td><strong>Waited</strong> (/ɪd/)</td><td>They waited for the bus. <button onclick="playAudio('They waited for the bus')" class="audio-link">🔊</button><br><span class="translation-line">Eles esperaram pelo ônibus.</span><br><code>/ðeɪ ˈweɪtɪd fər ðə bʌs/</code></td></tr>
+                        <tr><td>Want</td><td><strong>Wanted</strong> (/ɪd/)</td><td>I wanted ice cream. <button onclick="playAudio('I wanted ice cream')" class="audio-link">🔊</button><br><span class="translation-line">Eu queria sorvete.</span><br><code>/aɪ ˈwɑːntɪd aɪs kriːm/</code></td></tr>
+                        <tr><td>Need</td><td><strong>Needed</strong> (/ɪd/)</td><td>You needed help. <button onclick="playAudio('You needed help')" class="audio-link">🔊</button><br><span class="translation-line">Você precisava de ajuda.</span><br><code>/juː ˈniːdɪd help/</code></td></tr>
+                        <tr><td>Live</td><td><strong>Lived</strong> (/d/)</td><td>We lived in London. <button onclick="playAudio('We lived in London')" class="audio-link">🔊</button><br><span class="translation-line">Nós moramos em Londres.</span><br><code>/wiː lɪvd ɪn ˈlʌndən/</code></td></tr>
+                        <tr><td>Study</td><td><strong>Studied</strong> (/d/)</td><td>He studied hard. <button onclick="playAudio('He studied hard')" class="audio-link">🔊</button><br><span class="translation-line">Ele estudou muito.</span><br><code>/hiː ˈstʌdid hɑːrd/</code></td></tr>
+                        <tr><td>Stop</td><td><strong>Stopped</strong> (/t/)</td><td>The car stopped. <button onclick="playAudio('The car stopped')" class="audio-link">🔊</button><br><span class="translation-line">O carro parou.</span><br><code>/ðə kɑːr stɑːpt/</code></td></tr>
+                        <tr><td>Cook</td><td><strong>Cooked</strong> (/t/)</td><td>She cooked dinner. <button onclick="playAudio('She cooked dinner')" class="audio-link">🔊</button><br><span class="translation-line">Ela cozinhou o jantar.</span><br><code>/ʃiː kʊkt ˈdɪnər/</code></td></tr>
+                        <tr><td>Work</td><td><strong>Worked</strong> (/t/)</td><td>I worked yesterday. <button onclick="playAudio('I worked yesterday')" class="audio-link">🔊</button><br><span class="translation-line">Eu trabalhei ontem.</span><br><code>/aɪ wɜːrkt ˈjestərdeɪ/</code></td></tr>
+                        <tr><td>Clean</td><td><strong>Cleaned</strong> (/d/)</td><td>They cleaned the house. <button onclick="playAudio('They cleaned the house')" class="audio-link">🔊</button><br><span class="translation-line">Eles limparam a casa.</span><br><code>/ðeɪ kliːnd ðə haʊs/</code></td></tr>
+                        <tr><td>Call</td><td><strong>Called</strong> (/d/)</td><td>You called me. <button onclick="playAudio('You called me')" class="audio-link">🔊</button><br><span class="translation-line">Você me ligou.</span><br><code>/juː kɔːld miː/</code></td></tr>
+                        <tr><td>Start</td><td><strong>Started</strong> (/ɪd/)</td><td>It started to rain. <button onclick="playAudio('It started to rain')" class="audio-link">🔊</button><br><span class="translation-line">Começou a chover.</span><br><code>/ɪt ˈstɑːrtɪd tə reɪn/</code></td></tr>
+                        <tr><td>Ask</td><td><strong>Asked</strong> (/t/)</td><td>She asked a question. <button onclick="playAudio('She asked a question')" class="audio-link">🔊</button><br><span class="translation-line">Ela fez uma pergunta.</span><br><code>/ʃiː æskt ə ˈkwestʃən/</code></td></tr>
+                        <tr><td>Answer</td><td><strong>Answered</strong> (/d/)</td><td>He answered the phone. <button onclick="playAudio('He answered the phone')" class="audio-link">🔊</button><br><span class="translation-line">Ele atendeu o telefone.</span><br><code>/hiː ˈænsərd ðə foʊn/</code></td></tr>
+                        <tr><td>Enjoy</td><td><strong>Enjoyed</strong> (/d/)</td><td>We enjoyed the trip. <button onclick="playAudio('We enjoyed the trip')" class="audio-link">🔊</button><br><span class="translation-line">Nós curtimos a viagem.</span><br><code>/wiː ɪnˈdʒɔɪd ðə trɪp/</code></td></tr>
+                        <tr><td>Talk</td><td><strong>Talked</strong> (/t/)</td><td>They talked all night. <button onclick="playAudio('They talked all night')" class="audio-link">🔊</button><br><span class="translation-line">Eles conversaram a noite toda.</span><br><code>/ðeɪ tɔːkt ɔːl naɪt/</code></td></tr>
+                        <tr><td>Open</td><td><strong>Opened</strong> (/d/)</td><td>I opened the door. <button onclick="playAudio('I opened the door')" class="audio-link">🔊</button><br><span class="translation-line">Eu abri a porta.</span><br><code>/aɪ ˈoʊpənd ðə dɔːr/</code></td></tr>
+                        <tr><td>Close</td><td><strong>Closed</strong> (/d/)</td><td>You closed the window. <button onclick="playAudio('You closed the window')" class="audio-link">🔊</button><br><span class="translation-line">Você fechou a janela.</span><br><code>/juː kloʊzd ðə ˈwɪndoʊ/</code></td></tr>
+                        <tr><td>Like</td><td><strong>Liked</strong> (/t/)</td><td>She liked the gift. <button onclick="playAudio('She liked the gift')" class="audio-link">🔊</button><br><span class="translation-line">Ela gostou do presente.</span><br><code>/ʃiː laɪkt ðə ɡɪft/</code></td></tr>
+                        <tr><td>Love</td><td><strong>Loved</strong> (/d/)</td><td>We loved the movie. <button onclick="playAudio('We loved the movie')" class="audio-link">🔊</button><br><span class="translation-line">Nós amamos o filme.</span><br><code>/wiː lʌvd ðə ˈmuːvi/</code></td></tr>
+                        <tr><td>Hate</td><td><strong>Hated</strong> (/ɪd/)</td><td>He hated the noise. <button onclick="playAudio('He hated the noise')" class="audio-link">🔊</button><br><span class="translation-line">Ele odiou o barulho.</span><br><code>/hiː ˈheɪtɪd ðə nɔɪz/</code></td></tr>
+                        <tr><td>Visit</td><td><strong>Visited</strong> (/ɪd/)</td><td>They visited Paris. <button onclick="playAudio('They visited Paris')" class="audio-link">🔊</button><br><span class="translation-line">Eles visitaram Paris.</span><br><code>/ðeɪ ˈvɪzɪtɪd ˈpærɪs/</code></td></tr>
                     </tbody>
                 </table>
             </div>
         </section>
 
-        <section id="did-auxiliar">
-            <h3>12.4 O Auxiliar "Did": Negativas e Interrogativas ❓⛔</h3>
-            <p>Assim como usamos "do/does" no presente, usamos o auxiliar <strong>DID</strong> para fazer perguntas e negativas no passado com todos os verbos (exceto "to be").</p>
-            <p><strong>Regra de Ouro:</strong> Quando usamos o auxiliar <strong>DID</strong> (ou <strong>DIDN'T</strong>), o verbo principal volta para a sua <strong>FORMA BASE</strong> (sem "-ed"). O "did" já indica que a frase está no passado.</p>
-
-            <h4>Frases Negativas (Did not / Didn't)</h4>
+        <section id="did-auxiliar-negative">
+            <h3>12.4 Negativas no Passado (Did Not / Didn't) ⛔</h3>
+            <p>Usamos <strong>didn't</strong> (did not) e o verbo volta para a forma base.</p>
             <div class="table-responsive-wrapper">
                 <table>
                     <thead>
@@ -379,51 +245,39 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>I <span class="example-word">didn't watch</span> TV yesterday. <button onclick="playAudio('I didn\'t watch TV yesterday')" class="audio-link">🔊</button></td>
-                            <td>
-                                <span class="translation-line">Eu não assisti TV ontem.</span><br>
-                                <code>/aɪ ˈdɪdnt wɑːtʃ ˌtiːˈviː ˈjestərdeɪ/</code><br>
-                                <span class="character-portuguese-phonetics">(ÁI DÊ-dãnt UÓTCH tíi-VÍI IÉS-tãr-dei)</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>She <span class="example-word">didn't play</span> tennis. <button onclick="playAudio('She didn\'t play tennis')" class="audio-link">🔊</button></td>
-                            <td>
-                                <span class="translation-line">Ela não jogou tênis.</span><br>
-                                <code>/ʃiː ˈdɪdnt pleɪ ˈtenɪs/</code><br>
-                                <span class="character-portuguese-phonetics">(XÍI DÊ-dãnt PLÊI TÉ-nês)</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>We <span class="example-word">didn't visit</span> the museum. <button onclick="playAudio('We didn\'t visit the museum')" class="audio-link">🔊</button></td>
-                            <td>
-                                <span class="translation-line">Nós não visitamos o museu.</span><br>
-                                <code>/wiː ˈdɪdnt ˈvɪzɪt ðə mjuˈziːəm/</code><br>
-                                <span class="character-portuguese-phonetics">(UÍI DÊ-dãnt VÊ-zêt dhã miu-ZÍI-ãm)</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>They <span class="example-word">didn't like</span> the food. <button onclick="playAudio('They didn\'t like the food')" class="audio-link">🔊</button></td>
-                            <td>
-                                <span class="translation-line">Eles não gostaram da comida.</span><br>
-                                <code>/ðeɪ ˈdɪdnt laɪk ðə fuːd/</code><br>
-                                <span class="character-portuguese-phonetics">(DHÊI DÊ-dãnt LÁIK dhã FÚUD)</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>He <span class="example-word">didn't work</span> last week. <button onclick="playAudio('He didn\'t work last week')" class="audio-link">🔊</button></td>
-                            <td>
-                                <span class="translation-line">Ele não trabalhou semana passada.</span><br>
-                                <code>/hiː ˈdɪdnt wɜːrk læst wiːk/</code><br>
-                                <span class="character-portuguese-phonetics">(RÍI DÊ-dãnt UÃRK LÉST UÍIK)</span>
-                            </td>
-                        </tr>
+                        <tr><td>I <span class="example-word">didn't walk</span>. <button onclick="playAudio('I didn\'t walk')" class="audio-link">🔊</button></td><td><span class="translation-line">Eu não caminhei.</span><br><code>/aɪ ˈdɪdnt wɔːk/</code></td></tr>
+                        <tr><td>He <span class="example-word">didn't play</span>. <button onclick="playAudio('He didn\'t play')" class="audio-link">🔊</button></td><td><span class="translation-line">Ele não jogou.</span><br><code>/hiː ˈdɪdnt pleɪ/</code></td></tr>
+                        <tr><td>We <span class="example-word">didn't watch</span>. <button onclick="playAudio('We didn\'t watch')" class="audio-link">🔊</button></td><td><span class="translation-line">Nós não assistimos.</span><br><code>/wiː ˈdɪdnt wɑːtʃ/</code></td></tr>
+                        <tr><td>She <span class="example-word">didn't listen</span>. <button onclick="playAudio('She didn\'t listen')" class="audio-link">🔊</button></td><td><span class="translation-line">Ela não ouviu.</span><br><code>/ʃiː ˈdɪdnt ˈlɪsn/</code></td></tr>
+                        <tr><td>They <span class="example-word">didn't wait</span>. <button onclick="playAudio('They didn\'t wait')" class="audio-link">🔊</button></td><td><span class="translation-line">Eles não esperaram.</span><br><code>/ðeɪ ˈdɪdnt weɪt/</code></td></tr>
+                        <tr><td>You <span class="example-word">didn't want</span>. <button onclick="playAudio('You didn\'t want')" class="audio-link">🔊</button></td><td><span class="translation-line">Você não quis.</span><br><code>/juː ˈdɪdnt wɑːnt/</code></td></tr>
+                        <tr><td>I <span class="example-word">didn't need</span>. <button onclick="playAudio('I didn\'t need')" class="audio-link">🔊</button></td><td><span class="translation-line">Eu não precisei.</span><br><code>/aɪ ˈdɪdnt niːd/</code></td></tr>
+                        <tr><td>We <span class="example-word">didn't live</span> there. <button onclick="playAudio('We didn\'t live there')" class="audio-link">🔊</button></td><td><span class="translation-line">Nós não moramos lá.</span><br><code>/wiː ˈdɪdnt lɪv ðer/</code></td></tr>
+                        <tr><td>He <span class="example-word">didn't study</span>. <button onclick="playAudio('He didn\'t study')" class="audio-link">🔊</button></td><td><span class="translation-line">Ele não estudou.</span><br><code>/hiː ˈdɪdnt ˈstʌdi/</code></td></tr>
+                        <tr><td>It <span class="example-word">didn't stop</span>. <button onclick="playAudio('It didn\'t stop')" class="audio-link">🔊</button></td><td><span class="translation-line">Não parou.</span><br><code>/ɪt ˈdɪdnt stɑːp/</code></td></tr>
+                        <tr><td>She <span class="example-word">didn't cook</span>. <button onclick="playAudio('She didn\'t cook')" class="audio-link">🔊</button></td><td><span class="translation-line">Ela não cozinhou.</span><br><code>/ʃiː ˈdɪdnt kʊk/</code></td></tr>
+                        <tr><td>I <span class="example-word">didn't work</span>. <button onclick="playAudio('I didn\'t work')" class="audio-link">🔊</button></td><td><span class="translation-line">Eu não trabalhei.</span><br><code>/aɪ ˈdɪdnt wɜːrk/</code></td></tr>
+                        <tr><td>They <span class="example-word">didn't clean</span>. <button onclick="playAudio('They didn\'t clean')" class="audio-link">🔊</button></td><td><span class="translation-line">Eles não limparam.</span><br><code>/ðeɪ ˈdɪdnt kliːn/</code></td></tr>
+                        <tr><td>You <span class="example-word">didn't call</span>. <button onclick="playAudio('You didn\'t call')" class="audio-link">🔊</button></td><td><span class="translation-line">Você não ligou.</span><br><code>/juː ˈdɪdnt kɔːl/</code></td></tr>
+                        <tr><td>It <span class="example-word">didn't start</span>. <button onclick="playAudio('It didn\'t start')" class="audio-link">🔊</button></td><td><span class="translation-line">Não começou.</span><br><code>/ɪt ˈdɪdnt stɑːrt/</code></td></tr>
+                        <tr><td>She <span class="example-word">didn't ask</span>. <button onclick="playAudio('She didn\'t ask')" class="audio-link">🔊</button></td><td><span class="translation-line">Ela não perguntou.</span><br><code>/ʃiː ˈdɪdnt æsk/</code></td></tr>
+                        <tr><td>He <span class="example-word">didn't answer</span>. <button onclick="playAudio('He didn\'t answer')" class="audio-link">🔊</button></td><td><span class="translation-line">Ele não respondeu.</span><br><code>/hiː ˈdɪdnt ˈænsər/</code></td></tr>
+                        <tr><td>We <span class="example-word">didn't enjoy</span>. <button onclick="playAudio('We didn\'t enjoy')" class="audio-link">🔊</button></td><td><span class="translation-line">Nós não curtimos.</span><br><code>/wiː ˈdɪdnt ɪnˈdʒɔɪ/</code></td></tr>
+                        <tr><td>They <span class="example-word">didn't talk</span>. <button onclick="playAudio('They didn\'t talk')" class="audio-link">🔊</button></td><td><span class="translation-line">Eles não conversaram.</span><br><code>/ðeɪ ˈdɪdnt tɔːk/</code></td></tr>
+                        <tr><td>I <span class="example-word">didn't open</span>. <button onclick="playAudio('I didn\'t open')" class="audio-link">🔊</button></td><td><span class="translation-line">Eu não abri.</span><br><code>/aɪ ˈdɪdnt ˈoʊpən/</code></td></tr>
+                        <tr><td>You <span class="example-word">didn't close</span>. <button onclick="playAudio('You didn\'t close')" class="audio-link">🔊</button></td><td><span class="translation-line">Você não fechou.</span><br><code>/juː ˈdɪdnt kloʊz/</code></td></tr>
+                        <tr><td>She <span class="example-word">didn't like</span>. <button onclick="playAudio('She didn\'t like')" class="audio-link">🔊</button></td><td><span class="translation-line">Ela não gostou.</span><br><code>/ʃiː ˈdɪdnt laɪk/</code></td></tr>
+                        <tr><td>We <span class="example-word">didn't love</span>. <button onclick="playAudio('We didn\'t love')" class="audio-link">🔊</button></td><td><span class="translation-line">Nós não amamos.</span><br><code>/wiː ˈdɪdnt lʌv/</code></td></tr>
+                        <tr><td>He <span class="example-word">didn't hate</span>. <button onclick="playAudio('He didn\'t hate')" class="audio-link">🔊</button></td><td><span class="translation-line">Ele não odiou.</span><br><code>/hiː ˈdɪdnt heɪt/</code></td></tr>
+                        <tr><td>They <span class="example-word">didn't visit</span>. <button onclick="playAudio('They didn\'t visit')" class="audio-link">🔊</button></td><td><span class="translation-line">Eles não visitaram.</span><br><code>/ðeɪ ˈdɪdnt ˈvɪzɪt/</code></td></tr>
                     </tbody>
                 </table>
             </div>
+        </section>
 
-            <h4>Frases Interrogativas (Did...?)</h4>
+        <section id="did-auxiliar-interrogative">
+            <h3>12.5 Interrogativas no Passado (Did...?) ❓</h3>
+            <p>Usamos <strong>Did</strong> no início e o verbo volta para a forma base.</p>
             <div class="table-responsive-wrapper">
                 <table>
                     <thead>
@@ -433,46 +287,31 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td><span class="example-word">Did</span> you <span class="example-word">call</span> me? <button onclick="playAudio('Did you call me?')" class="audio-link">🔊</button></td>
-                            <td>
-                                <span class="translation-line">Você me ligou?</span><br>
-                                <code>/dɪd juː kɔːl miː/</code><br>
-                                <span class="character-portuguese-phonetics">(DÊD iúu CÓL míi?)</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><span class="example-word">Did</span> she <span class="example-word">finish</span> the book? <button onclick="playAudio('Did she finish the book?')" class="audio-link">🔊</button></td>
-                            <td>
-                                <span class="translation-line">Ela terminou o livro?</span><br>
-                                <code>/dɪd ʃiː ˈfɪnɪʃ ðə bʊk/</code><br>
-                                <span class="character-portuguese-phonetics">(DÊD xíi FÊ-nish dhã BÚK?)</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><span class="example-word">Did</span> they <span class="example-word">arrive</span> on time? <button onclick="playAudio('Did they arrive on time?')" class="audio-link">🔊</button></td>
-                            <td>
-                                <span class="translation-line">Eles chegaram na hora?</span><br>
-                                <code>/dɪd ðeɪ əˈraɪv ɑːn taɪm/</code><br>
-                                <span class="character-portuguese-phonetics">(DÊD dhêi ã-RÁIV ón TÁIM?)</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>What <span class="example-word">did</span> you <span class="example-word">do</span> yesterday? <button onclick="playAudio('What did you do yesterday?')" class="audio-link">🔊</button></td>
-                            <td>
-                                <span class="translation-line">O que você fez ontem?</span><br>
-                                <code>/wʌt dɪd juː duː ˈjestərdeɪ/</code><br>
-                                <span class="character-portuguese-phonetics">(UÓT dêd iúu DÚU IÉS-tãr-dei?)</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Where <span class="example-word">did</span> he <span class="example-word">live</span> before? <button onclick="playAudio('Where did he live before?')" class="audio-link">🔊</button></td>
-                            <td>
-                                <span class="translation-line">Onde ele morava antes?</span><br>
-                                <code>/wer dɪd hiː lɪv bɪˈfɔːr/</code><br>
-                                <span class="character-portuguese-phonetics">(UÉR dêd ríi LÊV bi-FÓR?)</span>
-                            </td>
-                        </tr>
+                        <tr><td><span class="example-word">Did</span> you <span class="example-word">walk</span>? <button onclick="playAudio('Did you walk?')" class="audio-link">🔊</button></td><td><span class="translation-line">Você caminhou?</span><br><code>/dɪd juː wɔːk/</code></td></tr>
+                        <tr><td><span class="example-word">Did</span> he <span class="example-word">play</span>? <button onclick="playAudio('Did he play?')" class="audio-link">🔊</button></td><td><span class="translation-line">Ele jogou?</span><br><code>/dɪd hiː pleɪ/</code></td></tr>
+                        <tr><td><span class="example-word">Did</span> we <span class="example-word">watch</span>? <button onclick="playAudio('Did we watch?')" class="audio-link">🔊</button></td><td><span class="translation-line">Nós assistimos?</span><br><code>/dɪd wiː wɑːtʃ/</code></td></tr>
+                        <tr><td><span class="example-word">Did</span> she <span class="example-word">listen</span>? <button onclick="playAudio('Did she listen?')" class="audio-link">🔊</button></td><td><span class="translation-line">Ela ouviu?</span><br><code>/dɪd ʃiː ˈlɪsn/</code></td></tr>
+                        <tr><td><span class="example-word">Did</span> they <span class="example-word">wait</span>? <button onclick="playAudio('Did they wait?')" class="audio-link">🔊</button></td><td><span class="translation-line">Eles esperaram?</span><br><code>/dɪd ðeɪ weɪt/</code></td></tr>
+                        <tr><td><span class="example-word">Did</span> you <span class="example-word">want</span>? <button onclick="playAudio('Did you want?')" class="audio-link">🔊</button></td><td><span class="translation-line">Você quis?</span><br><code>/dɪd juː wɑːnt/</code></td></tr>
+                        <tr><td><span class="example-word">Did</span> I <span class="example-word">need</span>? <button onclick="playAudio('Did I need?')" class="audio-link">🔊</button></td><td><span class="translation-line">Eu precisei?</span><br><code>/dɪd aɪ niːd/</code></td></tr>
+                        <tr><td><span class="example-word">Did</span> we <span class="example-word">live</span> there? <button onclick="playAudio('Did we live there?')" class="audio-link">🔊</button></td><td><span class="translation-line">Nós moramos lá?</span><br><code>/dɪd wiː lɪv ðer/</code></td></tr>
+                        <tr><td><span class="example-word">Did</span> he <span class="example-word">study</span>? <button onclick="playAudio('Did he study?')" class="audio-link">🔊</button></td><td><span class="translation-line">Ele estudou?</span><br><code>/dɪd hiː ˈstʌdi/</code></td></tr>
+                        <tr><td><span class="example-word">Did</span> it <span class="example-word">stop</span>? <button onclick="playAudio('Did it stop?')" class="audio-link">🔊</button></td><td><span class="translation-line">Parou?</span><br><code>/dɪd ɪt stɑːp/</code></td></tr>
+                        <tr><td><span class="example-word">Did</span> she <span class="example-word">cook</span>? <button onclick="playAudio('Did she cook?')" class="audio-link">🔊</button></td><td><span class="translation-line">Ela cozinhou?</span><br><code>/dɪd ʃiː kʊk/</code></td></tr>
+                        <tr><td><span class="example-word">Did</span> you <span class="example-word">work</span>? <button onclick="playAudio('Did you work?')" class="audio-link">🔊</button></td><td><span class="translation-line">Você trabalhou?</span><br><code>/dɪd juː wɜːrk/</code></td></tr>
+                        <tr><td><span class="example-word">Did</span> they <span class="example-word">clean</span>? <button onclick="playAudio('Did they clean?')" class="audio-link">🔊</button></td><td><span class="translation-line">Eles limparam?</span><br><code>/dɪd ðeɪ kliːn/</code></td></tr>
+                        <tr><td><span class="example-word">Did</span> you <span class="example-word">call</span>? <button onclick="playAudio('Did you call?')" class="audio-link">🔊</button></td><td><span class="translation-line">Você ligou?</span><br><code>/dɪd juː kɔːl/</code></td></tr>
+                        <tr><td><span class="example-word">Did</span> it <span class="example-word">start</span>? <button onclick="playAudio('Did it start?')" class="audio-link">🔊</button></td><td><span class="translation-line">Começou?</span><br><code>/dɪd ɪt stɑːrt/</code></td></tr>
+                        <tr><td><span class="example-word">Did</span> she <span class="example-word">ask</span>? <button onclick="playAudio('Did she ask?')" class="audio-link">🔊</button></td><td><span class="translation-line">Ela perguntou?</span><br><code>/dɪd ʃiː æsk/</code></td></tr>
+                        <tr><td><span class="example-word">Did</span> he <span class="example-word">answer</span>? <button onclick="playAudio('Did he answer?')" class="audio-link">🔊</button></td><td><span class="translation-line">Ele respondeu?</span><br><code>/dɪd hiː ˈænsər/</code></td></tr>
+                        <tr><td><span class="example-word">Did</span> we <span class="example-word">enjoy</span>? <button onclick="playAudio('Did we enjoy?')" class="audio-link">🔊</button></td><td><span class="translation-line">Nós curtimos?</span><br><code>/dɪd wiː ɪnˈdʒɔɪ/</code></td></tr>
+                        <tr><td><span class="example-word">Did</span> they <span class="example-word">talk</span>? <button onclick="playAudio('Did they talk?')" class="audio-link">🔊</button></td><td><span class="translation-line">Eles conversaram?</span><br><code>/dɪd ðeɪ tɔːk/</code></td></tr>
+                        <tr><td><span class="example-word">Did</span> you <span class="example-word">open</span>? <button onclick="playAudio('Did you open?')" class="audio-link">🔊</button></td><td><span class="translation-line">Você abriu?</span><br><code>/dɪd juː ˈoʊpən/</code></td></tr>
+                        <tr><td><span class="example-word">Did</span> you <span class="example-word">close</span>? <button onclick="playAudio('Did you close?')" class="audio-link">🔊</button></td><td><span class="translation-line">Você fechou?</span><br><code>/dɪd juː kloʊz/</code></td></tr>
+                        <tr><td><span class="example-word">Did</span> she <span class="example-word">like</span>? <button onclick="playAudio('Did she like?')" class="audio-link">🔊</button></td><td><span class="translation-line">Ela gostou?</span><br><code>/dɪd ʃiː laɪk/</code></td></tr>
+                        <tr><td><span class="example-word">Did</span> we <span class="example-word">love</span>? <button onclick="playAudio('Did we love?')" class="audio-link">🔊</button></td><td><span class="translation-line">Nós amamos?</span><br><code>/dɪd wiː lʌv/</code></td></tr>
+                        <tr><td><span class="example-word">Did</span> he <span class="example-word">hate</span>? <button onclick="playAudio('Did he hate?')" class="audio-link">🔊</button></td><td><span class="translation-line">Ele odiou?</span><br><code>/dɪd hiː heɪt/</code></td></tr>
+                        <tr><td><span class="example-word">Did</span> they <span class="example-word">visit</span>? <button onclick="playAudio('Did they visit?')" class="audio-link">🔊</button></td><td><span class="translation-line">Eles visitaram?</span><br><code>/dɪd ðeɪ ˈvɪzɪt/</code></td></tr>
                     </tbody>
                 </table>
             </div>
